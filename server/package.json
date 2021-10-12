@@ -1,21 +1,12 @@
 {
-  "name": "cygc",
+  "name": "server",
   "version": "1.0.0",
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "main": "index.js",
-  "dependencies": {
-    "apollo-server-express": "^3.3.0",
-    "bcrypt": "^5.0.1",
-    "concurrently": "^6.3.0",
-    "express": "^4.17.1",
-    "graphql": "^15.6.1",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.0.10"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "develop": "concurrently \"cd server && npm run nodemon\" \"cd client && npm start\""
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/Ross-White/cygc/issues"
   },
-  "homepage": "https://github.com/Ross-White/cygc#readme"
+  "homepage": "https://github.com/Ross-White/cygc#readme",
+  "dependencies": {
+    "apollo-server-express": "^3.3.0",
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.1",
+    "graphql": "^15.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.10"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
 }
