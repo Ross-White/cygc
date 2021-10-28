@@ -8,10 +8,6 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Welcome the CYGC app</p>
-        <p>This is for tracking the members' bowel movements</p>
-      </section>
     </Layout>
   )
 }
